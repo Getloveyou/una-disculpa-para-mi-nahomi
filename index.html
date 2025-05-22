@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Oye Nahomi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            /* Fondo guinda degradado con destellos y ositos */
+            background: radial-gradient(ellipse at 60% 30%, #fff2f7 0%, #ffd6e7 40%, #a83257 100%), 
+                        linear-gradient(120deg, #f8fafc 0%, #a83257 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .sparkle {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background: rgba(255,255,255,0.75);
+            border-radius: 50%;
+            filter: blur(2px);
+            z-index: 0;
+            animation: sparkle 3.5s infinite alternate;
+        }
+        .sparkle1 { top: 12%; left: 24%; animation-delay: 0s;}
+        .sparkle2 { top: 65%; left: 18%; animation-delay: 1s;}
+        .sparkle3 { top: 48%; left: 80%; animation-delay: 2s;}
+        .sparkle4 { top: 30%; left: 65%; animation-delay: 1.5s;}
+        .sparkle5 { top: 80%; left: 60%; animation-delay: 2.5s;}
+        @keyframes sparkle {
+            0% { opacity: 0.4; transform: scale(1);}
+            100% { opacity: 1; transform: scale(1.4);}
+        }
+        .container {
+            max-width: 480px;
+            margin: 60px auto;
+            background: rgba(255,255,255,0.93);
+            border-radius: 28px;
+            box-shadow: 0 8px 36px rgba(168, 50, 87, 0.20);
+            padding: 30px 22px 40px 22px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            color: #a83257;
+            margin-bottom: 14px;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+        }
+        p {
+            color: #333;
+            font-size: 1.15rem;
+            margin-bottom: 22px;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+        }
+        .corazon {
+            font-size: 2.5rem;
+            color: #a83257;
+            animation: late 1.3s infinite;
+        }
+        @keyframes late {
+            0%, 100% { transform: scale(1);}
+            50% { transform: scale(1.2);}
+        }
+        .firma {
+            margin-top: 28px;
+            color: #7e5a9b;
+            font-style: italic;
+            font-size: 1.13rem;
+        }
+        /* Ositos de fondo MÁS VISIBLES */
+        .bg-bears {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .osito-fondo {
+            position: absolute;
+            opacity: 0.32; /* Más visibles */
+            font-size: 8rem; /* Más grandes */
+            user-select: none;
+            filter: drop-shadow(0 4px 12px rgba(168,50,87,0.25));
+            transition: opacity 0.3s;
+        }
+        .osito-fondo1 { left: 6%; top: 10%; transform: rotate(-15deg);}
+        .osito-fondo2 { right: 12%; top: 19%; transform: rotate(12deg);}
+        .osito-fondo3 { left: 17%; bottom: 11%; transform: rotate(7deg);}
+        .osito-fondo4 { right: 8%; bottom: 16%; transform: rotate(-7deg);}
+        .osito-fondo5 { left: 48%; top: 55%; transform: rotate(0deg);}
+        .osito-fondo6 { left: 80%; bottom: 5%; transform: rotate(18deg);}
+        .osito-fondo7 { left: 2%; bottom: 40%; transform: rotate(-12deg);}
+        .osito-fondo8 { right: 4%; top: 70%; transform: rotate(9deg);}
+        .osito-carta {
+            font-size: 2.3rem;
+            margin: 0 0.35em;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .teamo {
+            font-weight: bold; 
+            color:#a83257; 
+            font-size:1.25rem;
+        }
+        .pregunta {
+            margin-top: 22px;
+            font-size: 1.13rem;
+            color: #a25b8a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Destellos para fondo más bonito -->
+    <div class="sparkle sparkle1"></div>
+    <div class="sparkle sparkle2"></div>
+    <div class="sparkle sparkle3"></div>
+    <div class="sparkle sparkle4"></div>
+    <div class="sparkle sparkle5"></div>
+    <div class="bg-bears">
+        <div class="osito-fondo osito-fondo1">🧸</div>
+        <div class="osito-fondo osito-fondo2">🧸</div>
+        <div class="osito-fondo osito-fondo3">🧸</div>
+        <div class="osito-fondo osito-fondo4">🧸</div>
+        <div class="osito-fondo osito-fondo5">🧸</div>
+        <div class="osito-fondo osito-fondo6">🧸</div>
+        <div class="osito-fondo osito-fondo7">🧸</div>
+        <div class="osito-fondo osito-fondo8">🧸</div>
+    </div>
+    <div class="container">
+        <div class="corazon">❤️</div>
+        <h1>Oye Nahomi</h1>
+        <p>
+            Sé que a veces mis actitudes han afectado nuestra relación y, de corazón, quiero pedirte perdón.
+        </p>
+        <p>
+            Eres una persona increíble que merece lo mejor, y yo quiero ser esa persona para ti. 
+            Quiero entregarte todo mi corazón y mi alma, esforzarme cada día para mejorar y ser el compañero que sueñas tener.
+            <span class="osito-carta">🧸</span>
+        </p>
+        <p>
+            Deseo que podamos superar juntos cualquier obstáculo, crecer como pareja y vivir momentos llenos de amor, respeto y comprensión.
+        </p>
+        <p class="teamo">
+            Te amo con todo mi ser y haré todo lo posible para demostrarlo. 💘
+        </p>
+        <div class="pregunta">
+            ¿Aceptas mis disculpas? 🥺
+        </div>
+        <div class="corazon">💖</div>
+        <div class="firma">
+            Con amor,<br>
+            tu bebé
+        </div>
+    </div>
+</body>
+</html>
